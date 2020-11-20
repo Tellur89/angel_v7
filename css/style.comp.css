@@ -148,7 +148,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .heading-secondary::after {
     content: "";
     display: block;
@@ -245,7 +246,8 @@ a:visited {
     .btn__popup {
       width: 100%;
       display: flex;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      border-radius: 0; } }
 
 .btn__popup:hover {
   background-color: #f5e590; }
@@ -483,7 +485,6 @@ a:visited {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #eee;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -553,8 +554,8 @@ a:visited {
     color: #6887a8; }
 
 .popup-card-horizontal {
-  width: 95rem;
-  height: 67.2rem; }
+  width: 76rem;
+  height: 53.75rem; }
 
 .popup-card-vertical {
   width: 48.8rem;
@@ -609,10 +610,10 @@ a:visited {
       align-items: center; }
       .popup-card-horizontal .popup-card-vertical__side,
       .popup-card-vertical .popup-card-vertical__side {
-        width: 46%; }
+        width: 46.2%; }
       .popup-card-horizontal .popup-card-horizontal__side,
       .popup-card-vertical .popup-card-horizontal__side {
-        width: 46%; }
+        width: 45.5%; }
       .popup-card-horizontal__side,
       .popup-card-vertical__side {
         position: relative; }
@@ -675,7 +676,8 @@ a:visited {
     z-index: 0; }
     @media (max-width: 75em) {
       .text-box__hero {
-        margin: 0; } }
+        margin: 0;
+        width: max-content; } }
     @media (max-width: 37.5em) {
       .text-box__hero {
         width: max-content;
@@ -749,21 +751,21 @@ a:visited {
   background-attachment: fixed;
   background-position: top;
   background-size: cover;
-  padding: 20rem; }
+  padding: 5%; }
   .about__container {
     background-color: rgba(255, 255, 255, 0.7);
-    width: 80%;
+    width: 60%;
     height: min-content;
     box-shadow: 2px 5px 15px black; }
     @media (max-width: 75em) {
       .about__container {
-        width: 70%; } }
+        width: 80%; } }
     @media (max-width: 37.5em) {
       .about__container {
-        width: 80%; } }
+        width: 90%; } }
   .about__content {
     border: 2px solid #6887a8;
-    padding: 10rem;
+    padding: 10%;
     margin: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -771,10 +773,10 @@ a:visited {
     align-items: center; }
     @media (max-width: 75em) {
       .about__content {
-        padding: 5rem; } }
+        padding: 5%; } }
     @media (max-width: 37.5em) {
       .about__content {
-        padding: 3rem; } }
+        padding: 5%; } }
 
 .functions {
   background-image: url(../img/functions.jpg); }
@@ -808,25 +810,31 @@ a:visited {
   justify-content: space-evenly;
   align-items: center;
   padding: 5rem; }
-  .footer__hours {
-    width: 200%; }
-    .footer__hours h3 {
-      padding-top: 3rem; }
-  .footer__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%; }
-    .footer__contact--address, .footer__contact--text-box {
-      padding-top: 1.5rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  .footer__hours h3 {
+    padding-top: 3rem; }
+  .footer__contact--address, .footer__contact--text-box {
+    padding-top: 1.5rem; }
   .footer__contact h3 {
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    padding-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .footer__contact {
+      padding-top: 10rem; } }
   .footer__icon {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     padding-top: 1rem; }
+  @media (max-width: 56.25em) {
+    .footer__newsletter {
+      padding-top: 10rem; } }
   .footer__newsletter p {
     text-align: center; }
 
@@ -840,8 +848,12 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 0; }
+  @media (max-width: 56.25em) {
+    .col {
+      width: 100%;
+      max-width: 100%; } }
 
 .col td,
 .col p,
@@ -1094,12 +1106,16 @@ a:visited {
     background-image: url(../img/wine-list-2.png); }
 
 .drinks-menu {
-  width: 95rem;
-  height: 67.2rem; }
+  width: 76rem;
+  height: 53.75rem; }
   @media (max-width: 56.25em) {
     .drinks-menu {
-      width: 65rem;
-      height: 45rem; } }
+      width: 49rem;
+      height: 35rem; } }
+  @media (max-width: 37.5em) {
+    .drinks-menu {
+      width: 39rem;
+      height: 28rem; } }
   .drinks-menu__1 {
     width: 100%;
     height: 100%; }
@@ -1168,8 +1184,8 @@ a:visited {
   align-items: center; }
   @media (max-width: 56.25em) {
     .kids-menu {
-      width: 35rem;
-      height: 26rem; } }
+      width: 40rem;
+      height: 35rem; } }
   .kids-menu__1 {
     width: 100%;
     height: 100%; }
